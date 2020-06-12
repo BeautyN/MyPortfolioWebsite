@@ -16,7 +16,9 @@
     <meta property="og:url" content="http://euro-travel-example.com/index.htm">
     <link rel="stylesheet" href="CSS/stylesheets.css">
     <!--fontawesome-->
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <!--google foints link-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
@@ -25,166 +27,173 @@
 
 <body>
 
-    <!--second navbar-->
-    <div class="NavBar">
+    <header>
+        <div class="icon"><a href=""><i class="fa fa-github " style="font-size: 20px;"></i></a></div>
+        <div class="icon">
+            <a href=""><i class="fa fa-linkedin" background="white" style="font-size: 20px;"></i></a>
+        </div>
+        <div class="icon"><i class="fa fa-envelope" style="font-size: 20px;"></i>
+            <a href=""></a>
+        </div>
+        <div class="icon"><i class="fa fa-phone " style="font-size: 20px;"></i>
+            <a href=""></a>
+        </div>
+        <div class="icon manu-icon"><a href=""><i class="fa fa-bars style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open"></i></a></div>
 
-
-        <header>
-            <div class="icon "><a href=" "><i class="fab fa-github " style="font-size: 20px; "></i></a></div>
-            <div class="icon ">
-                <a href=" "><i class="fab fa-linkedin " background="white " style="font-size: 20px; "></i></a>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">home</a>
+                <a href="#">about me</a>
+                <a href="#">journey</a>
+                <a href="#">resume</a>
+                <a href="#">get in touch</a>
             </div>
-            <div class="icon "><i class="far fa-envelope " style="font-size: 20px; "></i>
-                <a href=" "></a>
-            </div>
-            <div class="icon "><i class="fas fa-phone " style="font-size: 20px; "></i>
-                <a href=" "></a>
-            </div>
-            <div class="icon manu-icon "><a href=" "><i class="fas fa-bars "></i></a></div>
-        </header>
+        </div>
+    </header>
 
-        <div class="landing-page ">
+    <div class="landing-page">
 
-            <h2>Beauty</h2>
-            <hr class="breakline ">
+        <h2 class="Myname">Beauty</h2>
+
+        <hr class="breakline">
+    </div>
+
+    <div class=" container tagsection">
+        <h1 class="tags text-secondury">{ <span style="color: white;"> HI</span>}</h1>
+
+        <p class="Tline">&lt;p&gt;I strive for success in everything I do&lt;/p&gt;</p>
+        <div class="arrow">
+            <P class="ArrowTag">&#x2193;</P>
         </div>
 
-        <div class=" container tagsection ">
-            <h1 class="tags ">{HI}</h1>
+    </div>
 
-            <p class="Tline ">&lt;p&gt;I strive for success in everything I do&lt;/p&gt;</p>
-            <div class="arrow ">&#x2193;</div>
 
+    <br><br><br>
+
+    <div class="container tagsection aboutSection">
+
+        <h2 class="tagline">About Me</h2>
+
+
+        <br>
+        <div class="about-text text-left">
+
+            <img class="profileImage" src="Assets/portfolio Image.png" alt="Potrait Of Miss Beauty Ngobeni">
+            <p>I am a Public Relations Management graduate.I obtained my diploma with Unisa in 2017 where I developed
+            </p>
+            <p>My short term goal is to receive an opportunity in the form of employment, an internship or a learnership in the technology industry.</p>
+
+            <input class="butto" type="button" value="More about me">
         </div>
+    </div>
+    <br><br><br>
 
+    <div class="container tagsection GraduateSec">
+        <div class="about-text ">
+            <h2 class="tagline GradeLine">I am an ADA gradute</h2>
+            <img class="logo" src="Assets/images/ADA logo.png" alt="ADA logo">
+            <p class="Gradetext">From June 2019 to June 2020, I was a student at the African Developers Academy, where I Studied Front End Web Development. This work included coding HTML, CSS and JavaScript Skills as well as learning to build websites from the stage of briefing
+                to final online publishing.
 
-        <br><br><br>
-
-        <div class="container tagsection aboutSection ">
-            <h2 class="tagline">About Me</h2>
-            <div class="box ">
-                <img class="profileImage " src="Assets/portfolio Image.png " alt="Potrait Of Miss Beauty Ngobeni "></div>
+            </p>
+            <p class="two">This work included coding HTML, CSS and JavaScript Skills as well as learning to build websites from the stage of briefing to final online publishing..</p>
+            <input class="butto white-butto" type="button" value="my journey at ADA">
             <br>
-            <div class="about-text text-left ">
-
-                <p>I am a Public Relations Management graduate.I obtained my diploma with Unisa in 2017 where I developed
-                </p>
-                <p>My short term goal is to receive an opportunity in the form of employment, an internship or a learnership in the technology industry.</p>
-            </div>
-            <input class="butto aboutbutto " type="button " value="More about me ">
-        </div>
-        <br><br><br>
-
-        <div class="container tagsection GraduateSec ">
-            <div class="about-text ">
-                <h2 class="tagline GradeLine ">I am an ADA gradute</h2>
-                <img class="logo " src="Assets/images/ADA logo.png " alt="ADA logo ">
-                <p class="Gradetext ">From June 2019 to June 2020, I was a student at the African Developers Academy, where I Studied Front End Web Development. This work included coding HTML, CSS and JavaScript Skills as well as learning to build websites from the stage of
-                    briefing to final online publishing.
-
-                </p>
-                <p class="Gradetext two ">This work included coding HTML, CSS and JavaScript Skills as well as learning to build websites from the stage of briefing to final online publishing..</p>
-
-                <input class="butto white-butto " type="button " value="my journey at ADA ">
-                <br>
-                <input class="butto butto-two " type="button " value="view my CV ">
-
-
-            </div>
-        </div>
-
-
-        <br><br><br>
-
-        <div class="container tagsection testmonials ">
-            <h2 class="tagline">Testimonials</h2>
-
-            <br>
-            <div>
-                <div class="Ada ">
-                    <div class="monial-Image ">
-                        <img src="Assets/images/ADA logo.png " alt="ADA logo " style="width: 90px; height: 90px; ">
-                        <div class="orangebox ">in <br> contact <br> ADA</div>
-                    </div>
-                    <div class="testpara text-left ">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ut et est quaerat possimus. Iusto, aperiam exercitationem? Nam nulla, consequatur eos accusamus
-                        </p>
-                    </div>
-                </div>
-                <br>
-                <div class="Laura ">
-                    <div class="monial-Image ">
-                        <img src="Assets/images/0.jpg " alt="Potrait of Miss Laura Seal " style="width: 90px; height: 90px; ">
-                        <div class="orangebox ">in <br> contact <br> ADA</div>
-                    </div>
-                    <div class="testpara text-left ">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ut et est quaerat possimus. Iusto, aperiam exercitationem? Nam nulla, consequatur eos accusamus
-                        </p>
-                    </div>
-                </div>
-                <br>
-                <div class="Andrea ">
-                    <div class="monial-Image ">
-                        <img src="Assets/images/Andea (1).jpg " alt="Potrait of Mi Andrea Hayes " style="width: 90px; height: 90px; ">
-                        <div class="orangebox ">in <br> contact <br> ADA</div>
-                    </div>
-                    <div class="testpara text-left ">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ut et est quaerat possimus. Iusto, aperiam exercitationem? Nam nulla, consequatur eos accusamus
-                        </p>
-                    </div>
-                </div>
-                <br>
-                <div class="Kate ">
-                    <div class="monial-Image ">
-                        <img src="Assets/images/kate (1).jpg " alt="Potraite of Miss Kate Marsay " style="width: 90px; height: 90px; ">
-                        <div class="orangebox ">in <br> contact <br> ADA</div>
-                    </div>
-                    <div class="testpara text-left ">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ut et est quaerat possimus. Iusto, aperiam exercitationem? Nam nulla, consequatur eos accusamus
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br><br>
-
-        <div class="container Get-in-touch tagsection ">
-
-            <h2 class="tagline GradeLine intouchline ">Get in touch</h2>
-
-            <p class="touchtext ">Let's strive for excellence and provide positive change to the economy together. To get in touch drop me a message below.</p>
-
-            <br>
-            <form action="/action_page.php ">
-
-                <input class="inputone " type="text " id="fname " name="firstname " placeholder="Your name ">
-                <br> <br>
-
-                <input type="text " id="lname " name="lastname " placeholder="Your email ">
-
-                <br> <br>
-
-                <input type="text " id="Tname " name="Title " placeholder="Your message ">
-
-
-                <br>
-
-                <input class="butto touch-butto " type="button " value="view my CV ">
+            <input class="butto butto-two" type="button" value="view my CV">
 
         </div>
     </div>
+
+
+    <br><br><br>
+
+    <div class="container tagsection testmonials">
+        <h2>Testimonials</h2>
+
+        <br>
+        <div>
+            <div class="ADADEV">
+                <div class="monial-Image">
+                    <img src="Assets/images/ADA logo.png" alt="ADA logo" style="width: 90px; height: 90px;">
+                    <div class="orangebox"><i class="fa fa-linkedin" background="white" style="font-size: 20px;"></i> <br> contact <br> ADA</div>
+                </div>
+                <div class="testpara text-left ">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ut et est quaerat possimus. Iusto, aperiam exercitationem? Nam nulla, consequatur eos accusamus
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="monial-Image">
+                <img src="Assets/images/0.jpg" alt="Potrait of Miss Laura Seal" style="width: 90px; height: 90px;">
+                <div class="orangebox"><i class="fa fa-linkedin" background="white" style="font-size: 20px;"></i> <br> contact <br> ADA</div>
+            </div>
+            <div class="testpara text-left ">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ut et est quaerat possimus. Iusto, aperiam exercitationem? Nam nulla, consequatur eos accusamus
+                </p>
+            </div>
+            <br>
+            <div class="monial-Image">
+                <img src="Assets/images/Andea (1).jpg" alt="Potrait of Mi Andrea Hayes" style="width: 90px; height: 90px;">
+                <div class="orangebox"><i class="fa fa-linkedin" background="white" style="font-size: 20px;"></i> <br> contact <br> ADA</div>
+            </div>
+            <div class="testpara text-left ">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ut et est quaerat possimus. Iusto, aperiam exercitationem? Nam nulla, consequatur eos accusamus
+                </p>
+            </div>
+            <br>
+            <div class="monial-Image">
+                <img src="Assets/images/kate (1).jpg" alt="Potraite of Miss Kate Marsay" style="width: 90px; height: 90px;">
+                <div class="orangebox"><i class="fa fa-linkedin" background="white" style="font-size: 20px;"></i> <br> contact <br> ADA</div>
+            </div>
+            <div class="testpara text-left ">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ut et est quaerat possimus. Iusto, aperiam exercitationem? Nam nulla, consequatur eos accusamus
+                </p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container Get-in-touch tagsection">
+
+        <h2 class="intouchline tagline">Get in touch</h2>
+        <div class="touchtext">
+            <p>Let's strive for excellence and provide positive change to the economy together. To get in touch drop me a message below.</p>
+        </div>
+        <br>
+        <form action="/action_page.php">
+
+            <input class="inputone" type="text" id="fname" name="firstname" placeholder="Your name">
+            <br> <br>
+
+            <input type="text" class="lname" name="lastname" placeholder="Your email">
+
+            <br> <br>
+
+            <input type="text" class="Tname" name="Title" placeholder="Your message">
+
+
+            <br>
+
+            <input class="butto touch-butto" type="button" value="view my CV">
+
+    </div>
+    </div>
     <footer>
-        <div class="icon "><a href=" "><i class="fab fa-github " style="font-size: 20px; "></i></a></div>
-        <div class="icon ">
-            <a href=" "><i class="fab fa-linkedin " background="white " style="font-size: 20px; "></i></a>
+        <div class="F-Icons">
+            <div class="icon"><a href=""><i class="fa fa-github " style="font-size: 20px;"></i></a></div>
+            <div class="icon">
+                <a href=""><i class="fa fa-linkedin" background="white" style="font-size: 20px;"></i></a>
+            </div>
+            <div class="icon"><i class="fa fa-envelope" style="font-size: 20px;"></i>
+                <a href=""></a>
+            </div>
+            <div class="icon "><i class="fa fa-phone " style="font-size: 20px;"></i>
+                <a href=""></a>
+            </div>
+            <p class="copyright">copyright2020 by Beauty Ngobeni</p>
         </div>
-        <div class="icon "><i class="far fa-envelope " style="font-size: 20px; "></i>
-            <a href=" "></a>
-        </div>
-        <div class="icon "><i class="fas fa-phone " style="font-size: 20px; "></i>
-            <a href=" "></a>
-        </div>
-        <p>copyright2020 by Beauty Ngobeni</p>
 
     </footer>
 
