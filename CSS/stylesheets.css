@@ -1,504 +1,434 @@
-    html {
-        overflow-x: hidden;
-        max-width: 100vw !important;
-        padding: 0;
-        margin: 0;
-    }
-    
-    body {
-        background: black;
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        /* overflow-x: hidden;
-max-width: 100vw; */
-    }
-    
-    header {
-        width: 100%;
-        padding: 20px;
-    }
-    
-    .overlay {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.9);
-        overflow-x: hidden;
-        transition: 0.5s;
-    }
-    
-    .overlay-content {
-        position: relative;
-        top: 25%;
-        width: 100%;
-        text-align: center;
-        margin-top: 30px;
-    }
-    
-    .overlay a {
-        padding: 8px;
-        text-decoration: none;
-        font-size: 36px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-    
-    .overlay a:hover,
-    .overlay a:focus {
-        color: #f1f1f1;
-    }
-    
-    .overlay .closebtn {
-        position: absolute;
-        top: 20px;
-        right: 45px;
-        font-size: 60px;
-    }
-    
-    @media screen and (max-height: 450px) {
-        .overlay a {
-            font-size: 20px
-        }
-        .overlay .closebtn {
-            font-size: 40px;
-            top: 15px;
-            right: 35px;
-        }
-    }
-    
-    .icon {
-        display: inline-block;
-        text-align: center;
-        color: white;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: solid 2px white;
-        font-size: 10px;
-        padding: 2px;
-    }
-    
-    .manu-icon {
-        float: right;
-    }
-    
-    .landing-page {
-        width: 90%;
-        height: 20vh;
-        position: relative;
-        top: 10px;
-        text-align: center;
-        color: #eb5e28;
-        font-weight: 800;
-        margin: top;
-    }
-    
-    .Myname {
-        font-weight: 900;
-    }
-    
-    .breakline {
-        margin: 5vw;
-        background: whitesmoke;
-        width: 90vw;
-    }
-    
-    .container {
-        width: 100vw;
-        padding: 0;
-        margin: auto;
-        background: rgb(49, 46, 46);
-        text-align: center;
-        height: 50vh;
-    }
-    /* .tagsection {
+body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+
+/* *{
+     box-sizing: border-box;
+ } */
+
+html {
+    overflow-x: hidden;
+}
+
+
+/* Fonts */
+
+h1 {
+    font-weight: 500;
+}
+
+
+/* general styles */
+
+.dark-grey {
+    background: #333333;
+}
+
+.hide-on-mobile {
+    display: none;
+}
+
+.butto {
+    color: white;
+    background: #eb5e28;
+    width: 60vw;
+    height: 7vh;
+    border-radius: 25px;
+    border-style: none;
+    margin-top: 5vh;
+    margin-left: 10vw;
+}
+
+.buttonTwo {
+    background: gray;
+}
+
+h1.myName {
+    color: #eb5e28;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h1.tagline {
+    font-weight: 200;
+    font-size: 9em;
+    color: white;
+    margin: 0;
+}
+
+span.lightgrey {
+    color: #808080;
+}
+
+p.tag {
+    color: #f7931e;
+}
+
+
+/* the header section */
+
+
+/* icons */
+
+.icon {
+    display: inline-block;
+    font-size: 22px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
     text-align: center;
+    padding-top: 2px;
+}
+
+.icon a {
+    color: white;
+}
+
+.icon.mobile {
+    float: right;
+    color: white;
+}
+
+
+/* header: name and hr */
+
+hr {
+    width: 100%;
+    border-top: 1px white solid;
+    opacity: 0.7;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.overlay .icon {
+    float: right;
+    color: white;
+}
+
+.overlay-content ul {
+    list-style: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.overlay-content a {
+    color: white;
+    line-height: 2em;
+}
+
+.overlay-content a.active {
+    color: #f7931e;
+}
+
+.Desktop {
+    display: none;
+}
+
+
+/* about me section  */
+
+.profile-image {
+    box-shadow: -20px -20px gray;
+    margin-top: 2vh;
+}
+
+
+/* testimonals section */
+
+.TestimonalsDiv {
+    width: 90vw;
+    height: 235vh;
     margin: auto;
-    padding: 0;
-} */
-    
-    .tags {
-        position: relative;
-        font-size: 120px;
-        top: 5vh;
+    text-align: center;
+    background: rgb(41, 40, 40);
+}
+
+.TestimonalsHeading {
+    margin-top: 15px;
+    font-weight: 400;
+    opacity: 1;
+}
+
+.TestimonalsContent {
+    font-size: 14px;
+    font-weight: 250;
+    line-height: 18px;
+    text-align: justify;
+    text-size-adjust: 2px;
+    color: white;
+}
+
+.TestimonalsContactText {
+    font-size: 16px;
+    text-align: center;
+}
+
+.TestimonalsDivs {
+    margin-bottom: 20px;
+}
+
+.orangebox {
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    background: #eb5e28;
+}
+
+
+/* get in touch section */
+
+.ContactDiv {
+    width: 100%;
+    height: 8%;
+    background-color: #eb5e28;
+    color: white;
+}
+
+.Get-in-touch {
+    height: 120vh;
+}
+
+.intouchline {
+    margin-top: 20vh;
+}
+
+.touchtext {
+    margin-top: 10vh;
+}
+
+.touch-butto {
+    margin-top: 10vh;
+}
+
+.inputone {
+    background: grey;
+    width: 80vw;
+    height: 7vh;
+}
+
+.lname {
+    background: grey;
+    width: 80vw;
+    height: 7vh;
+}
+
+.Tname {
+    background: grey;
+    width: 80vw;
+    height: 30vh;
+}
+
+ ::placeholder {
+    color: white;
+    padding: 10px;
+}
+
+
+/* menu */
+
+.menu {
+    margin-left: 40vw;
+    margin-top: -23vh;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media (min-width: 576px) and (orientation: landscape) {}
+
+
+/* // --------------------------------------------------------------Medium devices (tablets) */
+
+@media (min-width: 768px) {
+    .block {
+        height: 30vh;
     }
-    
-    .Tline {
-        position: relative;
-        color: #f7931e;
-        top: 5vh;
+}
+
+
+/* // --------------------------------------------------------------Large devices (ipad pro) */
+
+@media (min-width: 992px) {
+    .show-on-desktop {
+        display: block;
     }
-    
-    .tagline {
-        position: relative;
-        color: #f7931e;
-        font-weight: 500;
-    }
-    
-    .arrow {
-        text-align: center;
-        width: 5vw;
-        height: 10vh;
-        border-radius: 50%;
-        border: solid white;
+    .hide-on-desktop {
         display: none;
     }
-    
-    .aboutSection {
-        bottom: 10px;
-        height: 100vh;
-        text-align: center;
-        margin: auto;
+    .menu {
+        display: none;
     }
-    
-    .profileImage {
-        margin-top: 12vh;
-        margin-left: 15vw;
-        width: 50vw;
-        height: 30vh;
-        border: solid white 2px;
-        box-shadow: -20px -20px gray;
+    .social-icons {
+        text-align: right;
     }
-    
-    .about-text {
+}
+
+@media screen and (min-width: 1200px) {
+    /* the header section */
+    .icons {
+        text-align: right;
+    }
+    #myNav {
+        display: none;
+    }
+    ul.desktop-nav {
+        list-style: none;
+    }
+    ul.desktop-nav li {
+        display: inline-block;
+        margin: 0 20px;
+        text-transform: uppercase;
+    }
+    ul.desktop-nav li a {
+        color: white;
+    }
+    ul.desktop-nav li a.active {
+        color: #f7931e;
+    }
+    .Desktop {
+        display: block;
+        color: white;
+    }
+    .mobile {
+        display: none;
+    }
+    .dots {
+        display: none;
+    }
+    .combined {
         position: relative;
-        display: block;
-        left: 20px;
-        width: 80vw;
-        height: auto;
+        left: 1300px;
+        bottom: -60px;
     }
-    
-    .butto {
-        color: white;
-        background: #f7931e;
-        width: 80vw;
-        height: 7vh;
-        border-radius: 25px;
-        margin-left: 5vw;
+    /* about section */
+    .about {
+        position: relative;
+        bottom: 70vh;
+        margin-left: 50vw;
     }
-    
-    .white-butto {
-        background: grey;
-        color: white;
+    .aboutpara {
+        position: relative;
+        top: 20vh;
     }
-    
-    .GraduateSec {
-        padding: 10px;
-        bottom: 10px;
-        height: 120vh;
+    .myName {
         text-align: center;
-        margin: auto;
+        color: #eb5e28;
     }
-    
-    .Gradetext {
-        display: block;
-    }
-    
-    .logo {
-        height: 25vh;
-        width: 50vw;
-        margin-top: 10vh;
-    }
-    
-    .testmonials {
-        padding: 30px;
+    p {
         display: inline-block;
         text-align: center;
-        height: 160vh;
     }
-    
-    .monial-Image {
-        margin-bottom: 2vh;
+    .butto {
+        display: none;
+    }
+    .buttonTwo {
+        position: relative;
         display: block;
-        padding-right: 400px;
+        right: 10vw;
     }
-    
+    .two {
+        position: relative;
+        bottom: 4vh;
+        left: 3vw;
+    }
+    .grades {
+        position: relative;
+        left: 18vw;
+    }
+    .buttons {
+        display: inline-block;
+        margin: 0 20px;
+        color: white;
+        background: #f7931e;
+        width: 12vw;
+        height: 5vh;
+        border-radius: 25px;
+        border-style: none;
+        margin-bottom: -30vh;
+        margin-left: 10vw;
+    }
+    /* testimonals section */
+    .TestimonalsDiv {
+        width: 86vw;
+        height: 100vh;
+    }
+    .TestimonalsHeading {
+        font-weight: 300;
+        text-align: center;
+        font-size: 2em;
+        width: 20vw;
+        margin-top: 8vh;
+    }
+    .TestimonalImage {
+        width: 10vw;
+        height: 15vh;
+    }
+    .ContactDiv {
+        width: 10vw;
+        height: 15vh;
+    }
+    .lectureImages {
+        width: 10vw;
+        height: 15vh;
+    }
+    .TestimonalsContent {
+        margin-left: -5vw;
+        width: 20vw;
+    }
     .orangebox {
         text-align: center;
         width: 90px;
         height: 90px;
         background: #eb5e28;
     }
-    
-    .testpara {
-        margin-top: -32vh;
-        height: 200px;
-        width: 200px;
-        margin-left: 30vw;
+    .firstColums {
+        margin-left: -5vw;
     }
-    
-    .Get-in-touch {
-        height: 120vh;
+    .firstColumsText {
+        margin-left: -20vw;
     }
-    
-    .intouchline {
-        margin-top: 20vh;
+    .secondColums {
+        transform: translate(30vw, -80vh);
     }
-    
-    .touchtext {
-        margin-top: 10vh;
-    }
-    
-    .touch-butto {
-        margin-top: 10vh;
-    }
-    
+    /* Get-in-touch  section*/
     .inputone {
         background: grey;
-        width: 80vw;
+        width: 50vw;
         height: 7vh;
     }
-    
     .lname {
         background: grey;
-        width: 80vw;
+        width: 50vw;
         height: 7vh;
     }
-    
     .Tname {
         background: grey;
-        width: 80vw;
+        width: 50vw;
         height: 30vh;
     }
-    
-     ::placeholder {
-        color: white;
+    .touch-butto {
+        display: block;
+        width: 20vw;
+        margin-left: 30vw;
     }
-    
     footer {
-        margin-top: 10vh;
-        text-align: center;
-        width: 100vw;
-        height: 20vh;
-    }
-    
-    .F-Icons {
-        position: relative;
-        top: 20vh;
         display: block;
     }
-    /* general classes */
-    
-    .hide-on-mobile {
-        display: none;
-    }
-    /* --------------------------------------------------------------media queries */
-    /* // Extra small devices (portrait phones, less than 576px) */
-    /* // No media query for `xs` since this is the default in Bootstrap */
-    /* // --------------------------------------------------------------Small devices (landscape phones, 576px and up) */
-    
-    @media (min-width: 576px) and (orientation: landscape) {}
-    /* // --------------------------------------------------------------Medium devices (tablets) */
-    
-    @media (min-width: 768px) {}
-    /* // --------------------------------------------------------------Large devices (ipad pro) */
-    
-    @media (min-width: 992px) {}
-    /* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
-    
-    @media (min-width: 1200px) {}
-    /* --------------------------------------------------------------Extra large devices landscape */
-    
-    @media (min-width: 1200px) and (orientation: landscape) {
-        /* general classes */
-        .icon {
-            float: right;
-        }
-        .manu-icon {
-            display: none;
-        }
-        .container {
-            width: 80vw;
-            padding: 0;
-            margin: 20vw;
-            background: rgb(49, 46, 46);
-            text-align: center;
-        }
-        .breakline {
-            margin-top: 10vh;
-            margin-left: 4vw;
-            background: whitesmoke;
-            width: 90vw;
-        }
-        .tagsection {
-            height: 70vh;
-            text-align: center;
-            margin: auto;
-            padding: 10vh;
-        }
-        .arrow {
-            font-size: 50px;
-            margin-top: 10vh;
-            margin-left: 50%;
-            width: 2vw;
-            height: 10vh;
-            border-radius: 60px;
-            border: solid white;
-            display: block;
-            padding: -1px;
-        }
-        .aboutSection {
-            position: relative;
-            bottom: 45vh;
-            right: 11vw;
-            margin: 20vw;
-            margin-top: 50vh;
-            background: rgb(49, 46, 46);
-            text-align: center;
-            height: 80vh;
-        }
-        .profileImage {
-            position: relative;
-            top: 30vh;
-            right: 50vw;
-            width: 30vw;
-            height: 30vh;
-            box-shadow: -20px -20px gray;
-        }
-        .about-text {
-            position: relative;
-            bottom: 200px;
-            left: 600px;
-            width: 20vw;
-            height: auto;
-        }
-        .butto {
-            display: none;
-        }
-        .GraduateSec {
-            position: relative;
-            bottom: 80vh;
-        }
-        .logo {
-            position: relative;
-            height: 40vh;
-            width: 20vw;
-            right: 30vw;
-            top: 10vh;
-        }
-        .GradeLine {
-            position: relative;
-            top: 30vh;
-        }
-        .Gradetext {
-            position: relative;
-            bottom: 20vh;
-        }
-        .two {
-            display: none;
-        }
-        .white-butto {
-            display: block;
-            width: 10vw;
-            height: 5vh;
-            position: relative;
-            bottom: 20vh;
-            right: 5vw;
-        }
-        .butto-two {
-            display: block;
-            position: relative;
-            width: 10vw;
-            height: 5vh;
-            bottom: 29vh;
-            left: 6vw;
-        }
-        .testmonials {
-            position: relative;
-            bottom: 75vh;
-            left: 9vw;
-            height: 120vh;
-        }
-        .Ada {
-            position: relative;
-            display: inline-block;
-            margin: -20;
-            height: 20vh;
-            width: 30vw;
-        }
-        .Laura {
-            position: relative;
-            display: block;
-            height: 20vh;
-            width: 30vw;
-        }
-        .Andrea {
-            position: relative;
-            display: block;
-            height: 20vh;
-            width: 30vw;
-        }
-        .Kate {
-            position: relative;
-            display: block;
-            height: 20vh;
-            width: 30vw;
-        }
-        .Get-in-touch {
-            position: relative;
-            height: 95vh;
-            bottom: 50vh;
-            left: -30px;
-        }
-        .intouchline {
-            position: relative;
-            bottom: 150px;
-        }
-        .touchtext {
-            position: relative;
-            bottom: 200px;
-            display: block;
-            width: 60vw;
-            height: 20;
-            left: 80px;
-        }
-        form {
-            position: relative;
-            bottom: 200px;
-        }
-        .inputone {
-            width: 60vw;
-            height: 7vh;
-        }
-        .lname {
-            width: 60vw;
-            height: 7vh;
-        }
-        .Tname {
-            width: 60vw;
-            height: 30vh;
-        }
-        .touch-butto {
-            position: relative;
-            display: block;
-            width: 20vw;
-            left: 40vh;
-            top: -7vh;
-        }
-        footer {
-            position: relative;
-            height: 30vh;
-            bottom: 60vh;
-        }
-        .monial-Image {
-            position: relative;
-            text-align: start;
-            display: block;
-            bottom: 20vh;
-        }
-        .ADADEV {
-            display: inline;
-            background: red;
-        }
-        .desktop-only {
-            display: block;
-        }
-    }
-    /* header section */
-    /* --------------------------------------------------------------Internet Explorer
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {}
+}
