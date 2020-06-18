@@ -193,10 +193,12 @@ hr {
 
 /* get in touch section */
 
-.ContactDiv {
-    width: 100%;
-    height: 8%;
-    background-color: #eb5e28;
+.card{
+    border: none;
+    border-radius: 0;
+}
+.card-body{
+    background: #eb5e28;
     color: white;
 }
 
@@ -349,10 +351,6 @@ footer {
         bottom: 4vh;
         left: 3vw;
     }
-    .grades {
-        position: relative;
-        left: 18vw;
-    }
     .buttons {
         display: inline-block;
         margin: 0 20px;
@@ -378,10 +376,6 @@ footer {
         margin-top: 8vh;
     }
     .TestimonalImage {
-        width: 10vw;
-        height: 15vh;
-    }
-    .ContactDiv {
         width: 10vw;
         height: 15vh;
     }
