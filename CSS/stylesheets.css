@@ -41,10 +41,12 @@ h1 {
     border-style: none;
     margin-top: 5vh;
     margin-left: 10vw;
+    border-style: none;
 }
 
-.buttonTwo {
+.buttoTwo {
     background: gray;
+    border-style: none;
 }
 
 h1.myName {
@@ -145,33 +147,15 @@ hr {
 .profile-image {
     box-shadow: -20px -20px gray;
     margin-top: 2vh;
+    width: 40vw;
+    height: 50vh;
+    border-style: white;
 }
-
-
-/* testimonals section */
-
-
-/* .TestimonalsDiv {
-    width: 10vw; 
-    height: 235vh;
-    margin: auto;
-    text-align: center;
-    background: rgb(41, 40, 40);
-} */
 
 .TestimonalsHeading {
     margin-top: 15px;
     font-weight: 400;
     opacity: 1;
-}
-
-.TestimonalsContent {
-    font-size: 14px;
-    font-weight: 250;
-    line-height: 18px;
-    text-align: justify;
-    text-size-adjust: 2px;
-    color: red;
 }
 
 .TestimonalsContactText {
@@ -190,21 +174,22 @@ hr {
     background: #eb5e28;
 }
 
-
-/* get in touch section */
-
-.card{
+.card {
     border: none;
     border-radius: 0;
 }
-.card-body{
+
+.card-body {
     background: #eb5e28;
     color: white;
 }
 
-.Get-in-touch {
-    height: 120vh;
+.testIcons {
+    color: white;
 }
+
+
+/* get in touch section */
 
 .intouchline {
     margin-top: 20vh;
@@ -216,24 +201,21 @@ hr {
 
 .touch-butto {
     margin-top: 10vh;
+    margin-left: 20vw;
 }
 
-.inputone {
+.email {
     background: grey;
     width: 80vw;
     height: 7vh;
+    margin-left: 10vw;
 }
 
-.lname {
-    background: grey;
-    width: 80vw;
-    height: 7vh;
-}
-
-.Tname {
+.massege {
     background: grey;
     width: 80vw;
     height: 30vh;
+    margin-left: 10vw;
 }
 
  ::placeholder {
@@ -320,15 +302,11 @@ footer {
         left: 1300px;
         bottom: -60px;
     }
-    /* about section */
-    .about {
-        position: relative;
-        bottom: 70vh;
-        margin-left: 50vw;
-    }
     .aboutpara {
         position: relative;
-        top: 20vh;
+        top: 5vh;
+        padding: 20px;
+        text-align: right;
     }
     .myName {
         text-align: center;
@@ -339,35 +317,18 @@ footer {
         text-align: center;
     }
     .butto {
-        display: none;
-    }
-    .buttonTwo {
-        position: relative;
         display: block;
-        right: 10vw;
+        width: 13vw;
+        height: 5vh;
+    }
+    .buttoTwo {
+        margin-top: -2vh;
+        margin-left: 5vw;
     }
     .two {
-        position: relative;
-        bottom: 4vh;
-        left: 3vw;
+        margin-top: -5vh;
+        margin-left: 20vw;
     }
-    .buttons {
-        display: inline-block;
-        margin: 0 20px;
-        color: white;
-        background: #f7931e;
-        width: 12vw;
-        height: 5vh;
-        border-radius: 25px;
-        border-style: none;
-        margin-bottom: -30vh;
-        margin-left: 10vw;
-    }
-    /* testimonals section */
-    /* .TestimonalsDiv {
-        width: 10vw;
-        height: 100vh;
-    } */
     .TestimonalsHeading {
         font-weight: 300;
         text-align: center;
@@ -387,36 +348,24 @@ footer {
         margin-left: -5vw;
         width: 20vw;
     }
-    .orangebox {
-        text-align: center;
-        width: 90px;
-        height: 90px;
-        background: #eb5e28;
-    }
     .firstColums {
         margin-left: -5vw;
     }
     .firstColumsText {
         margin-left: -20vw;
     }
-    /* .secondColums {
-        transform: translate(30vw, -80vh);
-    } */
     /* Get-in-touch  section*/
-    .inputone {
+    .email {
         background: grey;
         width: 50vw;
         height: 7vh;
+        margin-left: 15vw;
     }
-    .lname {
-        background: grey;
-        width: 50vw;
-        height: 7vh;
-    }
-    .Tname {
+    .massege {
         background: grey;
         width: 50vw;
         height: 30vh;
+        margin-left: 15vw;
     }
     .touch-butto {
         display: block;

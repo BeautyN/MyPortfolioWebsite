@@ -21,6 +21,16 @@ h1 {
     font-weight: 500;
 }
 
+h3 {
+    text-align: center;
+    color: #f7931e;
+}
+
+h2 {
+    text-align: center;
+    color: #f7931e;
+}
+
 
 /* general styles */
 
@@ -137,6 +147,16 @@ hr {
 
 .Desktop {
     display: none;
+}
+
+.skills {
+    display: block;
+    background: #eb5e28;
+    ;
+}
+
+.resume {
+    color: #f7931e;
 }
 
 
