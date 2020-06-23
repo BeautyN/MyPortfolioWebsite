@@ -253,12 +253,6 @@
             }
         }
         
-        @media (min-width: 1024px) {
-            .dark-grey {
-                width: 50vw;
-            }
-        }
-        
         @media screen and (min-width: 1200px) {
             /* the header section */
             .icons {
