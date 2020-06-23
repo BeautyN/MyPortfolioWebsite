@@ -149,16 +149,6 @@ hr {
     display: none;
 }
 
-.skills {
-    display: block;
-    background: #eb5e28;
-    ;
-}
-
-.resume {
-    color: #f7931e;
-}
-
 
 /* about me section  */
 
@@ -183,15 +173,6 @@ hr {
     margin-top: 15px;
     font-weight: 400;
     opacity: 1;
-}
-
-.TestimonalsContent {
-    font-size: 14px;
-    font-weight: 250;
-    line-height: 18px;
-    text-align: justify;
-    text-size-adjust: 2px;
-    color: red;
 }
 
 .TestimonalsContactText {
@@ -385,11 +366,6 @@ footer {
         margin-bottom: -30vh;
         margin-left: 10vw;
     }
-    /* testimonals section */
-    /* .TestimonalsDiv {
-        width: 10vw;
-        height: 100vh;
-    } */
     .TestimonalsHeading {
         font-weight: 300;
         text-align: center;
