@@ -1,378 +1,379 @@
-body {
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    color: white;
-}
-
-
-/* *{
+        body {
+            background-color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+            color: white;
+        }
+        /* *{
      box-sizing: border-box;
  } */
-
-html {
-    overflow-x: hidden;
-}
-
-
-/* Fonts */
-
-h1 {
-    font-weight: 500;
-}
-
-
-/* general styles */
-
-.dark-grey {
-    background: #333333;
-}
-
-.hide-on-mobile {
-    display: none;
-}
-
-.butto {
-    color: white;
-    background: #eb5e28;
-    width: 60vw;
-    height: 7vh;
-    border-radius: 25px;
-    border-style: none;
-    margin-top: 5vh;
-    margin-left: 10vw;
-    border-style: none;
-}
-
-.buttoTwo {
-    background: gray;
-    border-style: none;
-}
-
-h1.myName {
-    color: #eb5e28;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-
-h1.tagline {
-    font-weight: 200;
-    font-size: 9em;
-    color: white;
-    margin: 0;
-}
-
-span.lightgrey {
-    color: #808080;
-}
-
-p.tag {
-    color: #f7931e;
-}
-
-
-/* the header section */
-
-
-/* icons */
-
-.icon {
-    display: inline-block;
-    font-size: 22px;
-    border: 1.5px solid white;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    padding-top: 2px;
-}
-
-.icon a {
-    color: white;
-}
-
-.icon.mobile {
-    float: right;
-    color: white;
-}
-
-
-/* header: name and hr */
-
-hr {
-    width: 100%;
-    border-top: 1px white solid;
-    opacity: 0.7;
-}
-
-.overlay {
-    height: 100%;
-    width: 100%;
-    display: none;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-}
-
-.overlay .icon {
-    float: right;
-    color: white;
-}
-
-.overlay-content ul {
-    list-style: none;
-    font-size: 2em;
-    font-weight: 700;
-}
-
-.overlay-content a {
-    color: white;
-    line-height: 2em;
-}
-
-.overlay-content a.active {
-    color: #f7931e;
-}
-
-.Desktop {
-    display: none;
-}
-
-
-/* about me section  */
-
-.profile-image {
-    box-shadow: -20px -20px gray;
-    margin-top: 2vh;
-    width: 40vw;
-    height: 50vh;
-    border-style: white;
-}
-
-.TestimonalsHeading {
-    margin-top: 15px;
-    font-weight: 400;
-    opacity: 1;
-}
-
-.TestimonalsContactText {
-    font-size: 16px;
-    text-align: center;
-}
-
-.TestimonalsDivs {
-    margin-bottom: 20px;
-}
-
-.orangebox {
-    text-align: center;
-    width: 90px;
-    height: 90px;
-    background: #eb5e28;
-}
-
-.card {
-    border: none;
-    border-radius: 0;
-}
-
-.card-body {
-    background: #eb5e28;
-    color: white;
-}
-
-.testIcons {
-    color: white;
-}
-
-
-/* get in touch section */
-
-.intouchline {
-    margin-top: 20vh;
-}
-
-.touchtext {
-    margin-top: 10vh;
-}
-
-.touch-butto {
-    margin-top: 10vh;
-    margin-left: 20vw;
-}
-
-.email {
-    background: grey;
-    width: 80vw;
-    height: 7vh;
-    margin-left: 10vw;
-}
-
-.massege {
-    background: grey;
-    width: 80vw;
-    height: 30vh;
-    margin-left: 10vw;
-}
-
- ::placeholder {
-    color: white;
-    padding: 10px;
-}
-
-
-/* menu */
-
-.menu {
-    margin-left: 40vw;
-    margin-top: -23vh;
-}
-
-footer {
-    text-align: center;
-    padding-top: 20px;
-}
-
-@media (min-width: 576px) and (orientation: landscape) {}
-
-
-/* // --------------------------------------------------------------Medium devices (tablets) */
-
-@media (min-width: 768px) {
-    .block {
-        height: 30vh;
-    }
-}
-
-
-/* // --------------------------------------------------------------Large devices (ipad pro) */
-
-@media (min-width: 992px) {
-    .show-on-desktop {
-        display: block;
-    }
-    .hide-on-desktop {
-        display: none;
-    }
-    .menu {
-        display: none;
-    }
-    .social-icons {
-        text-align: right;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    /* the header section */
-    .icons {
-        text-align: right;
-    }
-    #myNav {
-        display: none;
-    }
-    ul.desktop-nav {
-        list-style: none;
-    }
-    ul.desktop-nav li {
-        display: inline-block;
-        margin: 0 20px;
-        text-transform: uppercase;
-    }
-    ul.desktop-nav li a {
-        color: white;
-    }
-    ul.desktop-nav li a.active {
-        color: #f7931e;
-    }
-    .Desktop {
-        display: block;
-        color: white;
-    }
-    .mobile {
-        display: none;
-    }
-    .dots {
-        display: none;
-    }
-    .combined {
-        position: relative;
-        left: 1300px;
-        bottom: -60px;
-    }
-    .aboutpara {
-        position: relative;
-        top: 5vh;
-        padding: 20px;
-        text-align: right;
-    }
-    .myName {
-        text-align: center;
-        color: #eb5e28;
-    }
-    p {
-        display: inline-block;
-        text-align: center;
-    }
-    .butto {
-        display: block;
-        width: 13vw;
-        height: 5vh;
-    }
-    .buttoTwo {
-        margin-top: -2vh;
-        margin-left: 5vw;
-    }
-    .two {
-        margin-top: -5vh;
-        margin-left: 20vw;
-    }
-    .TestimonalsHeading {
-        font-weight: 300;
-        text-align: center;
-        font-size: 2em;
-        width: 20vw;
-        margin-top: 8vh;
-    }
-    .TestimonalImage {
-        width: 10vw;
-        height: 15vh;
-    }
-    .lectureImages {
-        width: 10vw;
-        height: 15vh;
-    }
-    .TestimonalsContent {
-        margin-left: -5vw;
-        width: 20vw;
-    }
-    .firstColums {
-        margin-left: -5vw;
-    }
-    .firstColumsText {
-        margin-left: -20vw;
-    }
-    /* Get-in-touch  section*/
-    .email {
-        background: grey;
-        width: 50vw;
-        height: 7vh;
-        margin-left: 15vw;
-    }
-    .massege {
-        background: grey;
-        width: 50vw;
-        height: 30vh;
-        margin-left: 15vw;
-    }
-    .touch-butto {
-        display: block;
-        width: 20vw;
-        margin-left: 30vw;
-    }
-    footer {
-        display: block;
-    }
-}
+        
+        html {
+            overflow-x: hidden;
+        }
+        /* Fonts */
+        
+        h1 {
+            font-weight: 500;
+        }
+        /* general styles */
+        
+        .dark-grey {
+            background: #333333;
+        }
+        
+        .hide-on-mobile {
+            display: none;
+        }
+        
+        .butto {
+            color: white;
+            background: #eb5e28;
+            width: 60vw;
+            height: 7vh;
+            border-radius: 25px;
+            border-style: none;
+            margin-top: 5vh;
+            margin-left: 10vw;
+            border-style: none;
+        }
+        
+        .buttoTwo {
+            background: gray;
+            border-style: none;
+        }
+        
+        h1.myName {
+            color: #eb5e28;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+        
+        h1.tagline {
+            font-weight: 200;
+            font-size: 9em;
+            color: white;
+            margin: 0;
+        }
+        
+        span.lightgrey {
+            color: #808080;
+        }
+        
+        p.tag {
+            color: #f7931e;
+        }
+        /* the header section */
+        /* icons */
+        
+        .icon {
+            display: inline-block;
+            font-size: 22px;
+            border: 1.5px solid white;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            padding-top: 2px;
+        }
+        
+        .icon a {
+            color: white;
+        }
+        
+        .icon.mobile {
+            float: right;
+            color: white;
+        }
+        /* header: name and hr */
+        
+        hr {
+            width: 100%;
+            border-top: 1px white solid;
+            opacity: 0.7;
+        }
+        
+        .overlay {
+            height: 100%;
+            width: 100%;
+            display: none;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .overlay .icon {
+            float: right;
+            color: white;
+        }
+        
+        .overlay-content ul {
+            list-style: none;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        
+        .overlay-content a {
+            color: white;
+            line-height: 2em;
+        }
+        
+        .overlay-content a.active {
+            color: #f7931e;
+        }
+        
+        .Desktop {
+            display: none;
+        }
+        /* about me section  */
+        
+        .profile-image {
+            box-shadow: -20px -20px gray;
+            margin-top: 2vh;
+            width: 40vw;
+            height: 50vh;
+            border-style: white;
+        }
+        
+        .TestimonalsHeading {
+            margin-top: 15px;
+            font-weight: 400;
+            opacity: 1;
+        }
+        
+        .TestimonalsContactText {
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        .TestimonalsDivs {
+            margin-bottom: 20px;
+        }
+        
+        .orangebox {
+            text-align: center;
+            width: 90px;
+            height: 90px;
+            background: #eb5e28;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 0;
+        }
+        
+        .card-body {
+            background: #eb5e28;
+            color: white;
+        }
+        
+        .testIcons {
+            color: white;
+        }
+        /* get in touch section */
+        
+        .intouchline {
+            margin-top: 20vh;
+        }
+        
+        .touchtext {
+            margin-top: 10vh;
+        }
+        
+        .touch-butto {
+            margin-top: 10vh;
+            margin-left: 20vw;
+        }
+        
+        .email {
+            background: grey;
+            width: 80vw;
+            height: 7vh;
+            margin-left: 10vw;
+        }
+        
+        .massege {
+            background: grey;
+            width: 80vw;
+            height: 30vh;
+            margin-left: 10vw;
+        }
+        
+         ::placeholder {
+            color: white;
+            padding: 10px;
+        }
+        /* menu */
+        
+        .menu {
+            margin-left: 40vw;
+            margin-top: -23vh;
+        }
+        
+        footer {
+            text-align: center;
+            padding-top: 20px;
+        }
+        /* about me section */
+        
+        .aboutIcon {
+            background: white;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            color: black;
+            z-index: 1;
+        }
+        
+        @media (min-width: 576px) and (orientation: landscape) {}
+        /* // --------------------------------------------------------------Medium devices (tablets) */
+        
+        @media (min-width: 768px) {
+            .block {
+                height: 30vh;
+            }
+        }
+        /* // --------------------------------------------------------------Large devices (ipad pro) */
+        
+        @media (min-width: 992px) {
+            .show-on-desktop {
+                display: block;
+            }
+            .hide-on-desktop {
+                display: none;
+            }
+            .menu {
+                display: none;
+            }
+            .social-icons {
+                text-align: right;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .dark-grey {
+                width: 50vw;
+            }
+        }
+        
+        @media screen and (min-width: 1200px) {
+            /* the header section */
+            .icons {
+                text-align: right;
+            }
+            #myNav {
+                display: none;
+            }
+            ul.desktop-nav {
+                list-style: none;
+            }
+            ul.desktop-nav li {
+                display: inline-block;
+                margin: 0 20px;
+                text-transform: uppercase;
+            }
+            ul.desktop-nav li a {
+                color: white;
+            }
+            ul.desktop-nav li a.active {
+                color: #f7931e;
+            }
+            .Desktop {
+                display: block;
+                color: white;
+            }
+            .mobile {
+                display: none;
+            }
+            .aboutpara {
+                position: relative;
+                top: 5vh;
+                padding: 20px;
+                text-align: right;
+            }
+            .myName {
+                text-align: center;
+                color: #eb5e28;
+            }
+            p {
+                display: inline-block;
+                text-align: center;
+            }
+            .butto {
+                display: block;
+                width: 13vw;
+                height: 5vh;
+            }
+            .buttoTwo {
+                margin-top: -2vh;
+                margin-left: 5vw;
+            }
+            .two {
+                margin-top: -5vh;
+                margin-left: 20vw;
+            }
+            .TestimonalsHeading {
+                font-weight: 300;
+                text-align: center;
+                font-size: 2em;
+                width: 20vw;
+                margin-top: 8vh;
+            }
+            .TestimonalImage {
+                width: 10vw;
+                height: 15vh;
+            }
+            .lectureImages {
+                width: 10vw;
+                height: 15vh;
+            }
+            .TestimonalsContent {
+                margin-left: -5vw;
+                width: 20vw;
+            }
+            .firstColums {
+                margin-left: -5vw;
+            }
+            .firstColumsText {
+                margin-left: -20vw;
+            }
+            /* Get-in-touch  section*/
+            .email {
+                background: grey;
+                width: 50vw;
+                height: 7vh;
+                margin-left: 15vw;
+            }
+            .massege {
+                background: grey;
+                width: 50vw;
+                height: 30vh;
+                margin-left: 15vw;
+            }
+            .touch-butto {
+                display: block;
+                width: 20vw;
+                margin-left: 30vw;
+            }
+            footer {
+                display: block;
+            }
+            /* about two */
+            .bunner {
+                background: #eb5e28;
+                color: black;
+                height: 15vh;
+                width: 60vw;
+                margin: auto;
+            }
+            .resume {
+                color: black;
+                font-weight: bold;
+            }
+            .skills {
+                display: block;
+            }
+        }
