@@ -5,9 +5,6 @@
             color: white;
             overflow-x: hidden;
         }
-        /* *{
-     box-sizing: border-box;
- } */
         
         html {
             overflow-x: hidden;
@@ -85,6 +82,7 @@
         
         p.tag {
             color: #f7931e;
+            text-align: center;
         }
         
         p {
@@ -165,8 +163,8 @@
         /* resume-sectiom */
         
         .skills {
-            display: block;
             text-align: center;
+            margin-left: 30vw;
         }
         
         .star {
@@ -175,6 +173,7 @@
         
         .resume {
             color: #f7931e;
+            text-align: center;
         }
         /* testmonials section */
         
@@ -231,25 +230,31 @@
             padding-top: 20px;
         }
         
+        .copyright {
+            text-align: center;
+        }
+        
         .Beauty {
             color: #f7931e;
         }
         /* about me -page section */
+        
+        .Junior {
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
         
         .aboutIcon {
             font-size: 30px;
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            background: white;
+            background: #f7931e;
             color: black;
             text-align: center;
+            padding-top: 20px;
             margin: auto;
-        }
-        /* my journey page */
-        
-        .journeyText {
-            text-align: justify;
         }
         
         @media (min-width: 576px) and (orientation: landscape) {}
@@ -263,7 +268,24 @@
             .profile-image {
                 width: 40%;
             }
+            .bunner {
+                background: #eb5e28;
+                color: black;
+                height: 10vh;
+            }
             .aboutIcon {
+                background: white;
+            }
+            .bunner {
+                background: #eb5e28;
+                color: black;
+                margin: auto;
+                height: 15vh;
+            }
+            .AboutIconTwo {
+                background: #f7931e;
+            }
+            /* .aboutIcon {
                 font-size: 30px;
                 width: 80px;
                 height: 80px;
@@ -272,10 +294,18 @@
                 color: black;
                 text-align: center;
                 margin: auto;
-            }
+            } */
             /* testimonials */
             .testimonials {
                 padding: 25px 100px;
+            }
+            /* resume-page */
+            .stars {
+                text-align: center;
+            }
+            .skills {
+                background: #eb5e28;
+                margin-left: 0vw;
             }
         }
         /* // --------------------------------------------------------------Large devices (ipad pro) */
@@ -292,6 +322,22 @@
             }
             .social-icons {
                 text-align: right;
+            }
+            .stars {
+                text-align: center;
+            }
+            .skills {
+                background: #eb5e28;
+            }
+            .Ione {
+                margin-top: 4vh;
+                margin-left: 20vw;
+            }
+            .Junior {
+                color: black;
+                font-weight: bold;
+                margin-top: 5vh;
+                margin-left: -40vw;
             }
         }
         
@@ -380,10 +426,19 @@
                 background: #eb5e28;
                 color: black;
                 margin: auto;
+                height: 15vh;
             }
-            .resume {
+            .AboutIconTwo {
+                background: #f7931e;
+            }
+            .Junior {
                 color: black;
                 font-weight: bold;
+                margin-top: 5vh;
+                margin-left: -30vw;
+            }
+            .aboutIcon {
+                margin-top: 2vh;
             }
             .skills {
                 display: block;
