@@ -20,6 +20,11 @@
             text-align: center;
             color: #f7931e;
         }
+        /* Hi section */
+        
+        .arrow {
+            display: none;
+        }
         /* buttons */
         
         .btn-primary {
@@ -285,16 +290,6 @@
             .AboutIconTwo {
                 background: #f7931e;
             }
-            /* .aboutIcon {
-                font-size: 30px;
-                width: 80px;
-                height: 80px;
-                border-radius: 50%;
-                background: white;
-                color: black;
-                text-align: center;
-                margin: auto;
-            } */
             /* testimonials */
             .testimonials {
                 padding: 25px 100px;
@@ -372,6 +367,22 @@
             }
             .mobile {
                 display: none;
+            }
+            /* the Hi section */
+            .arrow {
+                font-size: 45px;
+                /* margin-top: -5vh; */
+                margin-left: 50%;
+                width: 2vw;
+                height: 10vh;
+                border-radius: 60px;
+                border: solid white;
+                display: block;
+                /* padding: 15px; */
+            }
+            .ArrowTag {
+                margin-left: -3px;
+                padding-top: -40vh;
             }
             .aboutpara {
                 position: relative;
