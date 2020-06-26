@@ -3,6 +3,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 1em;
             color: white;
+            overflow-x: hidden;
         }
         /* *{
      box-sizing: border-box;
@@ -22,6 +23,39 @@
             text-align: center;
             color: #f7931e;
         }
+        /* buttons */
+        
+        .btn-primary {
+            background: #eb5e28;
+            border: none;
+            border-radius: 50px;
+        }
+        
+        .btn-primary:hover,
+        .btn-primary:focus,
+        .btn-primary:active {
+            background: #f7931e;
+        }
+        
+        .btn-secondary {
+            border-radius: 50px;
+        }
+        /* forms */
+        
+        .form-control {
+            background: #808080;
+            border: 1px solid white;
+            border-radius: 0;
+            color: white;
+        }
+        
+        .form-control:focus {
+            background: #808080;
+        }
+        
+         ::placeholder {
+            color: white!important;
+        }
         
         .dark-grey {
             background: #333333;
@@ -29,23 +63,6 @@
         
         .hide-on-mobile {
             display: none;
-        }
-        
-        .butto {
-            color: white;
-            background: #eb5e28;
-            width: 60vw;
-            height: 7vh;
-            border-radius: 25px;
-            border-style: none;
-            margin-top: 5vh;
-            margin-left: 10vw;
-            border-style: none;
-        }
-        
-        .buttoTwo {
-            background: gray;
-            border-style: none;
         }
         
         h1.myName {
@@ -68,6 +85,10 @@
         
         p.tag {
             color: #f7931e;
+        }
+        
+        p {
+            text-align: justify;
         }
         /* the header section */
         /* icons */
@@ -137,17 +158,19 @@
         
         .profile-image {
             box-shadow: -20px -20px gray;
-            margin-top: 2vh;
-            width: 40vw;
-            height: 50vh;
             border-style: white;
+            width: 70%;
+            margin: 50px 0;
         }
         /* resume-sectiom */
         
         .skills {
             display: block;
-            background: #eb5e28;
-            ;
+            text-align: center;
+        }
+        
+        .star {
+            text-align: center;
         }
         
         .resume {
@@ -183,11 +206,6 @@
             margin-top: 10vh;
         }
         
-        .touch-butto {
-            margin-top: 10vh;
-            margin-left: 20vw;
-        }
-        
         .email {
             background: grey;
             width: 80vw;
@@ -219,12 +237,19 @@
         /* about me -page section */
         
         .aboutIcon {
-            background: white;
+            font-size: 30px;
             width: 80px;
             height: 80px;
             border-radius: 50%;
+            background: white;
             color: black;
-            z-index: 1;
+            text-align: center;
+            margin: auto;
+        }
+        /* my journey page */
+        
+        .journeyText {
+            text-align: justify;
         }
         
         @media (min-width: 576px) and (orientation: landscape) {}
@@ -233,6 +258,24 @@
         @media (min-width: 768px) {
             .block {
                 height: 30vh;
+            }
+            /* about me-page section  */
+            .profile-image {
+                width: 40%;
+            }
+            .aboutIcon {
+                font-size: 30px;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background: white;
+                color: black;
+                text-align: center;
+                margin: auto;
+            }
+            /* testimonials */
+            .testimonials {
+                padding: 25px 100px;
             }
         }
         /* // --------------------------------------------------------------Large devices (ipad pro) */
@@ -274,6 +317,9 @@
             ul.desktop-nav li a.active {
                 color: #f7931e;
             }
+            .aboutIcon {
+                margin-left: 15vw;
+            }
             .Desktop {
                 display: block;
                 color: white;
@@ -283,7 +329,6 @@
             }
             .aboutpara {
                 position: relative;
-                top: 5vh;
                 padding: 20px;
                 text-align: right;
             }
@@ -294,15 +339,6 @@
             p {
                 display: inline-block;
                 text-align: center;
-            }
-            .butto {
-                display: block;
-                width: 13vw;
-                height: 5vh;
-            }
-            .buttoTwo {
-                margin-top: -2vh;
-                margin-left: 5vw;
             }
             .two {
                 margin-top: -5vh;
@@ -331,13 +367,13 @@
                 height: 30vh;
                 margin-left: 15vw;
             }
-            .touch-butto {
-                display: block;
-                width: 20vw;
-                margin-left: 30vw;
-            }
             footer {
                 display: block;
+            }
+            /* about me section */
+            .profile-image {
+                width: 60%;
+                margin: auto;
             }
             /* about me -page */
             .bunner {
@@ -351,5 +387,6 @@
             }
             .skills {
                 display: block;
+                background: #eb5e28;
             }
         }
